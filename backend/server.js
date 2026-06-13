@@ -5,7 +5,7 @@ const dotenv = require('dotenv').config()
 const cors = require('cors')
 const productRoutes = require('./routes/productRoutes')
 
-app.use(cors())
+app.use(cors({origin:"https://demo-box4zonfv-usha2.vercel.app/"}))
 app.use(express.json())
 
 connectDb()
